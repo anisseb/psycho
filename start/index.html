@@ -106,95 +106,226 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
         </div>
     </section>
     <!-- About Section -->
-    <section id="consulting" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2 style="text-align:left;">Consulting</h2>
-				<p style="text-align:left;">FOLKS MET EN PLACE VOTRE STRATEGIE DE COM’ EN FONCTION DE VOTRE OBJECTIF ET DE VOTRE BUDGET</p>
-                <input type="checkbox" name="consultant"/> CONSULTANT
-				<input type="number" name="consultant_day" ><br>
-				<img class="consult" src="img/consulting.png" alt="consulting">
+    <form action="script.php" method="post">
+        <section id="consulting" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 style="text-align:left;">Consulting</h2>
+    				<p style="text-align:left;">FOLKS MET EN PLACE VOTRE STRATEGIE DE COM’ EN FONCTION DE VOTRE OBJECTIF ET DE VOTRE BUDGET</p>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label for="1.0">CONSULTANT</label>
+                            </div>
+                            <div class="col-sm-1">
+                            <input type="checkbox" name="consultant" id="1.0" class="form-control"/>
+                            </div>
+                            <div class="col-sm-3">
+                            <label for="1.1">Nombre de jours</label> 
+            			         <input type="number" name="consultant_day" id="1.1" class="form-control">
+                        </div>
+                    </div>
+    				<img class="consult" src="img/consulting.png" alt="consulting">
+                </div>
             </div>
-        </div>
-    </section>
-	<section id="conseil" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Conseil RH</h2>
-                <p>FOLKS MET EN PLACE UN ORDRE DE MISSION ET UNE FEUILLE DE ROUTE EN FONCTION DE L’OBJECTIF SUIVI ET DU BUDGET ALLOUÉ..</p>
-				<input type="radio" name="conseil_rh" id="1" value="315"> STAGE DE MOINS DE 6 MOIS<br>
-				<input type="radio" name="conseil_rh" id="2" value="630"> STAGE DE 6 MOIS ET PLUS<br>
-				<input type="radio" name="conseil_rh" id="3" value="630"> ALTERNANCES<br>
-				<input type="radio" name="conseil_rh" id="4" value="630"> CDD DE MOINS DE 6 MOIS<br>
-				<input type="radio" name="conseil_rh" id="5" value="1260"> CDD DE 6 MOIS ET PLUS<br>
-				<input type="radio" name="conseil_rh" id="6" value="1890"> CDI<br>
-				<img class="consult" src="img/conseil.png" alt="consulting">
+        </section>
+    	<section id="conseil" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Conseil RH</h2>
+                    <p>FOLKS MET EN PLACE UN ORDRE DE MISSION ET UNE FEUILLE DE ROUTE EN FONCTION DE L’OBJECTIF SUIVI ET DU BUDGET ALLOUÉ..</p>
+                    <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="conseil_rh" id="1" value="315">
+                            STAGE DE MOINS DE 6 MOIS
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="conseil_rh" id="2" value="630">
+                            STAGE DE 6 MOIS ET PLUS
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="conseil_rh" id="3" value="630">
+                            ALTERNANCES
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="conseil_rh" id="4" value="630">
+                            CDD DE MOINS DE 6 MOIS
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="conseil_rh" id="5" value="1260">
+                            CDD DE 6 MOIS ET PLUS 
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="conseil_rh" id="6" value="1260">
+                            CDI
+                          </label>
+                        </div>
+                    </div>
+    				<img class="consult" src="img/conseil.png" alt="consulting">
+                </div>
             </div>
-        </div>
-    </section>
-	<section id="recrutement" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Recrutement</h2>
-                <p>FOLKS IDENTIFIE, CONTRÖLE ET MET À DISPOSITION UN PROFIL SELECTIONNÉ EN FONCTION DE SES COMPÉTENCES, DE SON PARCOURS ET DE SA PERSONNALITÉ.</p>
-				<input type="radio" name="recrutement" id="7" value="630"> PROFIL JUNIOR<br>
-				<input type="radio" name="recrutement" id="8" value="1260"> PROFIL SENIOR<br>
-				<img class="consult" src="img/recrutement.png" alt="consulting">
+        </section>
+    	<section id="recrutement" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Recrutement</h2>
+                    <p>FOLKS IDENTIFIE, CONTRÖLE ET MET À DISPOSITION UN PROFIL SELECTIONNÉ EN FONCTION DE SES COMPÉTENCES, DE SON PARCOURS ET DE SA PERSONNALITÉ.</p>
+                    <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="recrutement" id="7" value="630" checked>
+                            PROFIL JUNIOR
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="recrutement" id="8" value="1260">
+                            PROFIL SENIOR
+                          </label>
+                        </div>
+                    </div>
+    				<img class="consult" src="img/recrutement.png" alt="consulting">
+                </div>
             </div>
-        </div>
-    </section>
-	<section id="reiteration" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Réitération</h2>
-                <p>FOLKS MET À DISPOSITION LA RECRUE POUR UN NOUVEAU CONTRAT</p>
-				<input type="radio" name="reiteration" id="9" value="315"> STAGE DE MOINS DE 6 MOIS<br>
-				<input type="radio" name="reiteration" id="10" value="630"> STAGE DE 6 MOIS ET PLUS<br>
-				<input type="radio" name="reiteration" id="11" value="630"> ALTERNANCES<br>
-				<input type="radio" name="reiteration" id="12" value="630"> CDD DE MOINS DE 6 MOIS<br>
-				<input type="radio" name="reiteration" id="13" value="1260"> CDD DE 6 MOIS ET PLUS<br>
-				<input type="radio" name="reiteration" id="14" value="1890"> CDI<br>
+        </section>
+    	<section id="reiteration" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Réitération</h2>
+                    <p>FOLKS MET À DISPOSITION LA RECRUE POUR UN NOUVEAU CONTRAT</p>
+                     <div class="form-group col-sm-6">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="reiteration" id="9" value="315">
+                            STAGE DE MOINS DE 6 MOIS  -  315,00 Euros HT
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="reiteration" id="10" value="630">
+                            STAGE DE 6 MOIS ET PLUS  -  630,00 Euros HT
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="reiteration" id="11" value="630">
+                            ALTERNANCES  -  630,00 Euros HT
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="reiteration" id="12" value="630">
+                            CDD DE MOINS DE 6 MOIS  -  630,00 Euros HT
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="reiteration" id="13" value="1260">
+                            CDD DE 6 MOIS ET PLUS  -  1260,00 Euros HT
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="reiteration" id="14" value="1890">
+                            CDI  -  1890,00 Euros HT
+                          </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-	<section id="metiers" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Métiers</h2>
-                <p>FOLKS VOUS PROPOSE UN POOL INFINI DE COMPÉTENCES. DIRECTEMENT PRIS EN CHARGE PAR VOTRE MARQUE. </p>
-				<img class="consult" src="img/metiers.png" alt="consulting">
+        </section>
+
+    	<section id="metiers" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 name="m_title"></h2>
+                    <p>FOLKS VOUS PROPOSE UN POOL INFINI DE COMPÉTENCES. DIRECTEMENT PRIS EN CHARGE PAR VOTRE MARQUE. </p>
+                    <ul>
+                        <li>CONSULTANTS</li>
+                        <li name="CDP"></li>
+                        <li name="DirArt"></li>
+                        <li name="webDev"></li>
+                        <li name="graph"></li>
+                        <li name="commMng"></li>
+                        <li name="respCom"></li>
+                    </ul>                            
+    				<img class="consult" src="img/metiers.png" alt="consulting">
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- Download Section -->
-    <section id="management" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
+        </section>
+
+        <section id="management" class="container content-section text-center">
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Management</h2>
                     <p>FOLKS ACCOMPAGNE VOTRE RECRUE TOUT AU LONG DE SA MISSION : </p>
-					<input type="checkbox" name="management_rt"/> REUNION TELEPHONIQUE
-					<input type="number" name="rt_nb" ><br>
-					<input type="checkbox" name="management_rp"/> REUNION PHYSIQUE
-					<input type="number" name="rp_nb" ><br>
+                     <div class="form-group">
+                        <div class="col-sm-4">
+                            <label for="15">REUNION TELEPHONIQUE</label>
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="checkbox" name="management_rt" id="15" class="form-control"/>
+                            </div>
+                            <div class="col-sm-3">
+                            <label for="16">Nombre</label> 
+                            <input type="number" name="rt_nb" id="16" class="form-control">
+                        </div>
+                    <div class="row"></div>
+                        <div class="col-sm-4">
+                            <label for="17">REUNION PHYSIQUE</label>
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="checkbox" name="management_rp" id="17" class="form-control"/>
+                            </div>
+                            <div class="col-sm-3">
+                            <label for="18">Nombre</label> 
+                            <input type="number" name="rp_nb" id="18" class="form-control">
+                        </div>
+                    </div>
 					<img class="consult" src="img/management.png" alt="consulting">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="cowork" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>CO-WORKING</h2>
-                <p>FOLKS MET À DISPOSITION DE VOTRE RECRUE UN BUREAU ET LE MATÉRIEL DANS L’UN DE SES FOLKS STORE : </p>
-				<input type="radio" name="co_working" value="30"> FORFAIT JOUR<br>
-				<input type="radio" name="co_working" value="120"> FORFAIT HEBDOMADAIRE<br>
-				<input type="radio" name="co_working" value="240"> FORFAIT MENSUEL<br>
+        <section id="cowork" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>CO-WORKING</h2>
+                    <p>FOLKS MET À DISPOSITION DE VOTRE RECRUE UN BUREAU ET LE MATÉRIEL DANS L’UN DE SES FOLKS STORE : </p>
+                    <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="co_working" id="19" value="30">
+                            FORFAIT JOUR
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="co_working" id="20" value="120">
+                            FORFAIT HEBDOMADAIRE
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="co_working" id="21" value="240">
+                            FORFAIT MENSUEL
+                          </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
 
     <!-- Map Section -->
     <div id="map"></div>
@@ -204,16 +335,39 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
         <div class="container text-center">
 			<h1>COMMENT ÇA MARCHE ?</h1>
 			<h2>1 / DÉSIGNER UN COMMANDITAIRE : </h2>
-			NOM <input type="text" name="client_nom" id="15"><br>
-            PRENOM <input type="text" name="client_prenom" id="16"><br>
-            POSTE <input type="text" name="client_cp" id="17"><br>
-            NUMERO <input type="text" name="client_num" id="18"><br>
-            MAIL <input type="text" name="client_mail" id="19"><br>
-
-            <br><input type="submit" value="Valider" />
-            <p>Copyright &copy; Your Website 2014</p>
+            <div class="form-group form-group-lg">
+                <label for="22" class="col-sm-3 control-label"></label>
+                <div class=" form-group col-sm-7">
+                  <input type="text" name="client_nom" class="form-control" id="22" placeholder="Nom">
+                </div>
+                <div class="row"></div>
+                <label for="23" class="col-sm-3 control-label"></label>
+                <div class="form-group col-sm-7">
+                  <input type="text" name="client_prenom" class="form-control" id="23" placeholder="Prénom">
+                </div>
+                <div class="row"></div>
+                <label for="24" class="col-sm-3 control-label"></label>
+                <div class="form-group col-sm-7">
+                  <input type="text" name="client_cp" class="form-control" id="24" placeholder="Poste">
+                </div>
+                <div class="row"></div>
+                <label for="25" class="col-sm-3 control-label"></label>
+                <div class="form-group col-sm-7">
+                  <input type="text" name="client_num" class="form-control" id="25" placeholder="Numéro">
+                </div>
+                <div class="row"></div>
+                <label for="26" class="col-sm-3 control-label"></label>
+                <div class="form-group col-sm-7">
+                  <input type="mail" name="client_mail" class="form-control" id="26" placeholder="Email">
+                </div>
+                <div class="row"></div>
+            </div>
+            <button type="submit" class="btn btn-default">Valider</button>
         </div>
+        </form>
     </footer>
+
+    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -229,6 +383,40 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <script type="text/javascript">
+     $("[name=CDP]").html("CHEFS DE PROJETS  -  2100,00 Euros HT / MOIS") ;
+     $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2000,00 Euros HT / MOIS");
+     $("[name=m_title]").html("Métiers (JUNIOR)");
+     $("[name=webDev]").html("DÉVELOPPEURS WEB  -  1500,00 Euros HT / MOIS");
+     $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  1500,00 Euros HT / MOIS");
+     $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  1700,00 Euros HT / MOIS");
+     $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  1500,00 Euros HT / MOIS");
+
+    $("input[name=recrutement]").click(function(){
+    var value = $(this).attr("value");
+    if (value === "630")
+    {
+        $("[name=CDP]").html("CHEFS DE PROJETS  -  2100,00 Euros HT / MOIS") ;
+        $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2000,00 Euros HT / MOIS");
+        $("[name=m_title]").html("Métiers (JUNIOR)");
+        $("[name=webDev]").html("DÉVELOPPEURS WEB  -  1500,00 Euros HT / MOIS");
+        $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  1500,00 Euros HT / MOIS");
+        $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  1700,00 Euros HT / MOIS");
+        $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  1500,00 Euros HT / MOIS");
+    }
+    else
+    {        
+        $("[name=CDP]").html("CHEFS DE PROJETS  -  3300,00 Euros HT / MOIS") ;
+        $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2200 - 4000,00 Euros HT / MOIS");
+        $("[name=m_title]").html("Métiers (SENIOR)");
+        $("[name=webDev]").html("DÉVELOPPEURS WEB  -  3600,00 Euros HT / MOIS");
+        $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  2300,00 Euros HT / MOIS");
+        $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  2700,00 Euros HT / MOIS");
+        $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  3500,00 Euros HT / MOIS");
+    }
+    });
+    </script>
 
 </body>
 
