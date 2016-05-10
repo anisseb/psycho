@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Folks - Login</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container_login">
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">FOLKS</span></h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2 class="titre_login">Connexion</h2>
+			</div>
+		    <form>
+			    <div class="form-group">
+					<input type="mail" id="email" class="form-control" placeholder="Email">
+					<input type="password" id="password" class="form-control" placeholder="Mot de passe">
+				</div>
+				<button type="submit" id="submit">Valider</button>
+			</form>
+			<div id="resultat">
+		        Mauvais identifiants
+		    </div>
+		</div>
+	</div>
+</body>
+
+<script>
+	$(document).ready(function () {
+		var pass = 0;
+    	$('#logo').addClass('animated fadeInDown');
+    	$('#resultat').hide();
+
+    	$("input:text:visible:first").focus();
+
+		$('#username').focus(function() {
+			$('label[for="username"]').addClass('selected');
+		});
+		$('#username').blur(function() {
+			$('label[for="username"]').removeClass('selected');
+		});
+		$('#password').focus(function() {
+			$('label[for="password"]').addClass('selected');
+		});
+		$('#password').blur(function() {
+			$('label[for="password"]').removeClass('selected');
+		});
+
+    	$("#submit").click(function () {
+		   	var email = $("#email").val();
+			var password = $("#password").val();
+			// Checking for blank fields.
+			if( email =='' || password =='')
+			{
+				$('input[type="text"],input[type="password"]').css("border","2px solid red");
+				$('input[type="text"],input[type="password"]').css("box-shadow","0 0 3px red");
+				alert("Please fill all fields...!!!!!!");
+			}
+			else 
+			{
+				$.post("login.php",{ email1: email, password1:password},
+				function(data) {
+				if(data=='Invalid Email.......') {
+				$('input[type="text"]').css({"border":"2px solid red","box-shadow":"0 0 3px red"});
+				$('input[type="password"]').css({"border":"2px solid #00F5FF","box-shadow":"0 0 5px #00F5FF"});
+				alert(data);
+			}
+			else if(data=='Email or Password is wrong...!!!!')
+			{
+				$('input[type="text"],input[type="password"]').css({"border":"2px solid red","box-shadow":"0 0 3px red"});
+				alert(data);
+				} else if(data=='Successfully Logged in...'){
+				$("form")[0].reset();
+				$('input[type="text"],input[type="password"]').css({"border":"2px solid #00F5FF","box-shadow":"0 0 5px #00F5FF"});
+				alert(data);
+			}
+			else
+			{
+				alert(data);
+			}
+			});
+			}
+		});
+	});
+
+</script>
+
+</html>
