@@ -63,8 +63,6 @@
     $result_ttc = $result * 1.20;
     $tva = $result_ttc - $result;
 
-    
-
     ?>
     <p><strong>Résultat HT = <?php echo $result ?> Euros</strong></p>
     <p><strong>Résultat TVA = <?php echo $tva?> Euros</strong></p>
@@ -76,6 +74,7 @@
     <p><strong>Résultat Management = <?php echo $result_management ?> Euros HT</strong></p>
     <p><strong>Résultat Co - Working = <?php echo $result_coW ?> Euros HT</strong></p>
     <p><strong>FORFAIT <?php print($forfait) ?></strong></p>
+<<<<<<< HEAD
 </html>
 <?php
 $content='<page><html>
@@ -196,3 +195,4 @@ require_once(__DIR__ . '/html2pdf/vendor/autoload.php');
         return true;
     }
 }*/
+?></html>
