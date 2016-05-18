@@ -13,9 +13,14 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'> -->
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+<!--     <link rel="stylesheet" href="css/animate.css">
+    Custom Stylesheet
+    <link rel="stylesheet" href="css/style.css"> -->
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,8 +37,32 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- <section class="form_login">
+    <div class="container_login">
+        <div class="top">
+            <h1 id="title" class="hidden"><span id="logo">FOLKS</span></h1>
+        </div>
+        <div class="login-box animated fadeInUp">
+            <div class="box-header">
+                <h2 class="titre_login">Connexion</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="mail" id="email" class="form-control" placeholder="Email">
+                    <input type="password" id="password" class="form-control" placeholder="Mot de passe">
+                </div>
+                <button type="submit" id="submit">Valider</button>
+            </form>
+            <div id="resultat">
+                Mauvais identifiants
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- <section class="page_app">
 
-    <!-- Navigation -->
+  -->   <!-- Navigation -->
+ 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -73,6 +102,9 @@
 					<li>
                         <a class="page-scroll" href="#cowork">Co-Working</a>
                     </li>
+                    <!-- <li>
+                        <button type="submit" form="69" class="btn btn-default">Valider</button>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -97,6 +129,7 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
             </div>
         </div>
     </header>
+    
     <section  class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -106,7 +139,7 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
         </div>
     </section>
     <!-- About Section -->
-    <form action="script.php" method="post">
+     <form id="69" action="script.php" method="post">
         <section id="consulting" class="container content-section text-center">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -183,7 +216,7 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
                     <div class="form-group col-sm-4">
                         <div class="radio">
                           <label>
-                            <input type="radio" name="recrutement" id="7" value="630" checked>
+                            <input type="radio" name="recrutement" id="7" value="630">
                             PROFIL JUNIOR
                           </label>
                         </div>
@@ -302,25 +335,24 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>CO-WORKING</h2>
                     <p>FOLKS MET À DISPOSITION DE VOTRE RECRUE UN BUREAU ET LE MATÉRIEL DANS L’UN DE SES FOLKS STORE : </p>
-                    <div class="form-group col-sm-4">
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="co_working" id="19" value="30">
-                            FORFAIT JOUR
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="co_working" id="20" value="120">
-                            FORFAIT HEBDOMADAIRE
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="co_working" id="21" value="240">
-                            FORFAIT MENSUEL
-                          </label>
-                        </div>
+                    <div class="form-group col-sm-6">
+                        <ul>
+                            <li>FORFAIT JOUR -  30,00 Euros HT</li>
+                            <li>FORFAIT HEBDOMADAIRE -  120,00 Euros HT</li>
+                            <li>FORFAIT MENSUEL -  240,00 Euros HT</li>
+                        </ul> 
+                    </div>
+                    <div class="col-sm-2">
+                            <label for="21.1">Nombre de mois</label> 
+                            <input type="number" name="nb_day_cw" id="21.1" class="form-control">
+                    </div>
+                    <div class="col-sm-2">
+                            <label for="21.2">Nombre de semaine</label> 
+                            <input type="number" name="nb_week_cw" id="21.2" class="form-control">
+                    </div>
+                    <div class="col-sm-2">
+                            <label for="21.3">Nombre de jour</label> 
+                            <input type="number" name="nb_month_cw" id="21.3" class="form-control">
                     </div>
                 </div>
             </div>
@@ -366,8 +398,8 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
         </div>
         </form>
     </footer>
-
-    
+<!-- 
+  </section>   -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -385,18 +417,10 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
     <script src="js/grayscale.js"></script>
 
     <script type="text/javascript">
-     $("[name=CDP]").html("CHEFS DE PROJETS  -  2100,00 Euros HT / MOIS") ;
-     $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2000,00 Euros HT / MOIS");
-     $("[name=m_title]").html("Métiers (JUNIOR)");
-     $("[name=webDev]").html("DÉVELOPPEURS WEB  -  1500,00 Euros HT / MOIS");
-     $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  1500,00 Euros HT / MOIS");
-     $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  1700,00 Euros HT / MOIS");
-     $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  1500,00 Euros HT / MOIS");
+    $(document).ready(function () {
+        /*$("page_app").hide();
+        $("#form_login").show();*/
 
-    $("input[name=recrutement]").click(function(){
-    var value = $(this).attr("value");
-    if (value === "630")
-    {
         $("[name=CDP]").html("CHEFS DE PROJETS  -  2100,00 Euros HT / MOIS") ;
         $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2000,00 Euros HT / MOIS");
         $("[name=m_title]").html("Métiers (JUNIOR)");
@@ -404,17 +428,30 @@ PUBLIQUES DANS LE <br> DÉPLOIEMENT DE LEUR STRATÉGIE DE COMMUNICATION.</p>
         $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  1500,00 Euros HT / MOIS");
         $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  1700,00 Euros HT / MOIS");
         $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  1500,00 Euros HT / MOIS");
-    }
-    else
-    {        
-        $("[name=CDP]").html("CHEFS DE PROJETS  -  3300,00 Euros HT / MOIS") ;
-        $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2200 - 4000,00 Euros HT / MOIS");
-        $("[name=m_title]").html("Métiers (SENIOR)");
-        $("[name=webDev]").html("DÉVELOPPEURS WEB  -  3600,00 Euros HT / MOIS");
-        $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  2300,00 Euros HT / MOIS");
-        $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  2700,00 Euros HT / MOIS");
-        $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  3500,00 Euros HT / MOIS");
-    }
+
+        $("input[name=recrutement]").click(function(){
+            var value = $(this).attr("value");
+            if (value === "630")
+            {
+                $("[name=CDP]").html("CHEFS DE PROJETS  -  2100,00 Euros HT / MOIS") ;
+                $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2000,00 Euros HT / MOIS");
+                $("[name=m_title]").html("Métiers (JUNIOR)");
+                $("[name=webDev]").html("DÉVELOPPEURS WEB  -  1500,00 Euros HT / MOIS");
+                $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  1500,00 Euros HT / MOIS");
+                $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  1700,00 Euros HT / MOIS");
+                $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  1500,00 Euros HT / MOIS");
+            }
+            else
+            {        
+                $("[name=CDP]").html("CHEFS DE PROJETS  -  3300,00 Euros HT / MOIS") ;
+                $("[name=DirArt]").html("DIRECTEURS ARTISTIQUES  -  2200 - 4000,00 Euros HT / MOIS");
+                $("[name=m_title]").html("Métiers (SENIOR)");
+                $("[name=webDev]").html("DÉVELOPPEURS WEB  -  3600,00 Euros HT / MOIS");
+                $("[name=graph]").html("EXÉCUTANTS GRAPHIQUES ET WEB  -  2300,00 Euros HT / MOIS");
+                $("[name=commMng]").html("COMMUNNITY MANAGER ET WEB  -  2700,00 Euros HT / MOIS");
+                $("[name=respCom]").html("RESPONSABLE COM ET WEB  -  3500,00 Euros HT / MOIS");
+            }
+        });
     });
     </script>
 

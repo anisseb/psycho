@@ -1,0 +1,58 @@
+.titreservice{
+	text-align:center;
+	text-transform:uppercase;
+	font-weight: 600;
+    font-size: 17px;
+}
+
+.prix{
+	position: relative;
+    left: 47%;
+}
+
+.texte{
+	text-align:center;
+	text-transform:uppercase;
+	padding:20px;
+}
+
+.recrutement{
+	text-align:center;
+	text-transform:uppercase;
+	padding:30px;
+	font-weight: 600;
+}
+
+.titre{
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 44px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.entete{
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.rem{
+	text-align:center;
+	padding:20px;
+	text-transform:uppercase;
+}
+
+.textefooterl{
+	margin-left: 150px;
+    font-size: 11px;
+    position: relative;
+    top: 36px;
+	
+}
+
+.textefooterr{
+	margin-right: 150px;
+    font-size: 11px;
+    position: relative;
+    text-align: right;
+    bottom: 33px;
+}
